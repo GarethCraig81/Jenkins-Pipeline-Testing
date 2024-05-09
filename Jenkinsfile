@@ -33,7 +33,8 @@ pipeline {
         }
 
         stage('Deploy') {
- 
+ 	skip "skipping deploy"
+	}
 	                when{
                 expression {params.SKIP_DEPLOY == 'true' }
                 }
