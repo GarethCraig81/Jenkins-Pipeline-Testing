@@ -33,8 +33,7 @@ pipeline {
         }
 
         stage('Deploy') {
-when {
-    expression {<some boolean expression>}
+
             steps {
 
                 sh 'cat ./deploy.sh'
